@@ -1,5 +1,8 @@
 # vhs tape for the meeting-scribe demo GIF.
 # Render from repo root: vhs assets/demo/demo.tape  (writes assets/demo.gif)
+#
+# Narration uses `echo` (prints cleanly, no "command not found").
+# The `run` command is only printed, never executed (it needs real audio).
 
 Output assets/demo.gif
 
@@ -17,29 +20,28 @@ Enter
 Sleep 800ms
 Show
 
-Type "# meeting-scribe: recordings -> speaker-labeled transcripts + notes"
+Type "echo 'meeting-scribe: recordings -> speaker-labeled transcripts + notes'"
 Enter
-Sleep 1200ms
+Sleep 1400ms
 
 Type "python meeting.py --help"
 Enter
-Sleep 2800ms
+Sleep 3000ms
 
-Type "# 1) transcribe + summarize one meeting, with named speakers:"
+Type "echo '# transcribe + summarize one meeting, with named speakers:'"
 Enter
-Sleep 700ms
-Type 'python meeting.py run meetings/team-sync.m4a --participants "Sam,Alice,Bob" --participant-samples "Sam=voice_samples/sam.wav,Alice=voice_samples/alice.wav" --speakers 3'
+Sleep 900ms
+Type "echo 'python meeting.py run meetings/team-sync.m4a --participants Sam,Alice,Bob --speakers 3'"
+Enter
+Sleep 2000ms
+
+Type "echo '# pipeline: ffmpeg | WhisperX | pyannote diarize | SpeechBrain | summary'"
+Enter
 Sleep 1800ms
-Ctrl+C
-Sleep 400ms
 
-Type "# pipeline: ffmpeg -> WhisperX -> pyannote diarize -> SpeechBrain -> summary"
+Type "echo '# the generated, focus-steered notes:'"
 Enter
-Sleep 1600ms
-
-Type "# 2) the generated, focus-steered notes:"
-Enter
-Sleep 700ms
+Sleep 900ms
 Type "cat assets/demo/sample_summary.md"
 Enter
-Sleep 4200ms
+Sleep 4500ms
