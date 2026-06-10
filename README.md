@@ -1,5 +1,10 @@
 # meeting-scribe
 
+[![License: Apache 2.0](https://img.shields.io/github/license/HJrad/meeting-scribe?color=blue)](LICENSE)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![Powered by WhisperX + pyannote](https://img.shields.io/badge/powered%20by-WhisperX%20%2B%20pyannote-8A2BE2.svg)](#third-party-dependencies)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/HJrad/meeting-scribe/pulls)
+
 A local-first meeting transcriber that turns audio or video recordings into speaker-diarized transcripts and technical meeting notes.
 
 ![meeting-scribe demo](assets/demo.gif)
