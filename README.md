@@ -2,6 +2,8 @@
 
 A local-first meeting transcriber that turns audio or video recordings into speaker-diarized transcripts and technical meeting notes.
 
+![meeting-scribe demo](assets/demo.gif)
+
 ## What It Produces
 
 For each meeting, the tool writes:
