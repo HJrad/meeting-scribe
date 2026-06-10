@@ -1,0 +1,38 @@
+meeting-scribe
+Copyright 2026 HJrad
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+------------------------------------------------------------------------------
+Third-party components
+------------------------------------------------------------------------------
+
+This software depends on third-party libraries and machine-learning models
+that are NOT covered by this project's Apache-2.0 license. Each is governed by
+its own license and usage terms, which you must comply with — especially for
+commercial use. This project's license cannot grant rights that these terms
+withhold.
+
+  - WhisperX                — BSD-4-Clause
+                              https://github.com/m-bain/whisperX
+  - OpenAI Whisper models   — MIT
+                              https://github.com/openai/whisper
+  - pyannote.audio          — MIT (library)
+                              Pretrained diarization/segmentation models are
+                              GATED on Hugging Face and carry their own user
+                              conditions. You must accept those terms and
+                              verify they permit your use case (including any
+                              commercial use).
+                              https://github.com/pyannote/pyannote-audio
+  - SpeechBrain             — Apache-2.0
+                              https://github.com/speechbrain/speechbrain
+  - OpenAI API              — used at runtime for summary generation; subject
+                              to the OpenAI API Terms of Use and your own
+                              OpenAI account/billing.
+                              https://openai.com/policies
+  - ffmpeg                  — LGPL/GPL depending on build (external system
+                              dependency, not bundled).
+                              https://ffmpeg.org
+
+See requirements.txt for the full Python dependency list and their respective
+licenses.

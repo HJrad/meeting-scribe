@@ -1,0 +1,21 @@
+# ── PyTorch (Apple Silicon wheel includes MPS support) ─────────────────────
+# Install BEFORE this file: pip install torch torchaudio
+# (pip install -r requirements.txt does NOT re-install torch if already present)
+torch
+torchaudio
+
+# ── Transcription ───────────────────────────────────────────────────────────
+# WhisperX is on PyPI but sometimes lags; pin to a known-good version.
+# If it fails on Python 3.13 (ctranslate2 wheel availability), see setup.sh.
+whisperx>=3.1.0
+
+# ── Diarization ─────────────────────────────────────────────────────────────
+pyannote.audio>=3.1.0
+
+# ── Participant identification ──────────────────────────────────────────────
+speechbrain>=1.0.0
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+numpy
+pyyaml
+openai

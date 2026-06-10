@@ -1,0 +1,37 @@
+# Copy to config/meetings.yaml and add one entry per meeting.
+#
+# Put recordings in ./meetings, then add an entry here.
+# For automatic participant identification, add a short voice_sample per
+# participant. Otherwise, inspect the generated transcript once and fill
+# speaker_map manually.
+
+meetings:
+  TEAM_SYNC_001:
+    source_audio: team-sync.m4a        # file under ./meetings
+    title: Team Sync
+    date: 2026-01-15
+    language: en                       # en, de, or auto
+    summary_language:
+      - en                             # add - de for a second language
+    recording_type: meeting
+    num_speakers: 3
+    skip_diarization: false
+    participants:
+      - name: Alice
+        role: host
+        voice_sample: voice_samples/alice.wav
+      - name: Bob
+        role: participant
+        voice_sample: voice_samples/bob.wav
+      - name: Carol
+        role: participant
+        # voice_sample optional; omit to leave this speaker generic
+    topic: Weekly engineering sync
+    partner: default                   # key from config/partners.yaml
+    project: Example Project
+    summary_focus:
+      - Decisions and their rationale
+      - Action items with owners and due dates
+      - Technical risks and open questions
+    notes: ""
+    speaker_map: {}                    # e.g. SPEAKER_00: Alice (used if no voice samples)

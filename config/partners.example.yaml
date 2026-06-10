@@ -1,0 +1,25 @@
+# Copy to config/partners.yaml. Partner branding registry for exported PDFs.
+#
+# Each meeting in meetings.yaml may set `partner: <key>`. The PDF exporter
+# looks the key up here for the logo + brand colours. Unknown/missing partner
+# falls back to `default`. If a logo file is missing, the letterhead renders
+# the wordmark text only.
+#
+# To add a partner: drop a logo (svg/png) in assets/brand/logos/ and add a block.
+
+partners:
+  acme:
+    display_name: Acme
+    wordmark_html: "Acme<span>Co</span>"
+    logo: assets/brand/logos/acme-mark.svg
+    primary: "#2800FF"
+    ink: "#181834"
+    accent: "#29297D"
+
+  default:
+    display_name: Your Company
+    wordmark_html: "Your<span>Company</span>"
+    logo: assets/brand/logos/default-mark.svg
+    primary: "#2800FF"
+    ink: "#181834"
+    accent: "#29297D"

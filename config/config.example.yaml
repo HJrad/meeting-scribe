@@ -1,0 +1,6 @@
+# Copy to config/config.yaml. Local defaults for the transcriber.
+# Keep secrets in .env or your shell, not in this file.
+
+output_dir: ./output/meetings
+cache_dir: ./.cache
+default_language: en
